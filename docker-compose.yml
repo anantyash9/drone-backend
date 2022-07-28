@@ -1,0 +1,14 @@
+version: "3.9" 
+services:
+  api:
+    build: .
+    ports:
+      - "5000:5000"
+    links:
+      - redis
+    volumes:
+      - ".:/app/yolov5/runs:rw"
+      - ".:/app/trainingset:rw"
+  redis:
+    image: redis
+

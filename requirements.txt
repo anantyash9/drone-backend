@@ -1,0 +1,13 @@
+msgpack==1.0.2
+rq
+Shapely
+numpy
+pandas
+fastapi
+pymongo
+pymongo[srv]
+uvicorn
+redis
+opencv-python
+python-multipart
+yolov5
